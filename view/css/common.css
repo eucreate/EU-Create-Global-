@@ -1,0 +1,150 @@
+/* ------------------------------------------------------------
+common style
+------------------------------------------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111114;
+  font-family: Verdana, "BIZ UDPGothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.61;
+  -webkit-text-size-adjust: 100%;
+}
+a img {
+  border: none;
+}
+h2 {
+  color: #F60;
+}
+  
+/* ------------------------------------------------------------
+header style
+------------------------------------------------------------ */
+#headerUpper {
+  background: #EEEEEE;
+}
+#headerUnder {
+  background: #06C;
+}
+#headerUpperInner,
+#headerUnderInner {
+  max-width: 992px;
+  margin: 0 auto;
+}
+#headerUnderInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header p {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 75%;
+  -webkit-font-feature-settings: 'palt' 1;
+  font-feature-settings: 'palt' 1;
+}
+header #headerUnderInner h1 {
+  margin: 0;
+  padding: 16px 16px 0;
+}
+header #headerUnderInner h1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.headerMenu {
+  border-bottom: 3px solid #ddd;
+}
+.headerMenu ul {
+  list-style: none;
+  max-width: 960px;
+  margin: 1em auto;
+  padding: 0 16px;
+  text-align: center;
+}
+.headerMenu ul li {
+  display: inline-block;
+}
+.headerMenu ul li:not(:last-child) {
+  margin-right: 0.9em;
+}
+.headerMenu ul li a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 575px) {
+  #headerUnderInner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  header #headerUnderInner h1,
+  header #headerUnderInner #search {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  header #headerUnderInner #search {
+    padding: 0 16px 16px;
+  }
+  header #headerUnderInner #search input[type="search"] {
+    width: 100%;
+    margin-bottom: .5em;
+    padding: 6px;
+    border-radius: 6px;
+  }
+  header #headerUnderInner #search #selectMode {
+    padding: 6px;
+    border-radius: 6px;
+  }
+  header #headerUnderInner #search input[type="submit"] {
+    padding: 4px 6px;
+    border-radius: 6px;
+  }
+}
+
+/* ------------------------------------------------------------
+contents style
+------------------------------------------------------------ */
+#contents {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ------------------------------------------------------------
+footer style
+------------------------------------------------------------ */
+footer {
+  padding: 0 16px;
+  border-top: 3px solid #DDDDDD;
+}
+.footerMenu {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.footerMenu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.footerMenu ul li {
+  display: inline-block;
+}
+.footerMenu ul li:not(:last-child) {
+  margin-right: 0.9em;
+}
+.footerMenu ul li a:hover {
+  text-decoration: none;
+}
+
+#footerInner {
+  max-width: 960px;
+  margin: 0 auto;
+}
